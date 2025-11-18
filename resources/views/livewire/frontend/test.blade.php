@@ -1,4 +1,4 @@
-<x-layouts.app :title="__('test')">
+<x-layouts.template :title="__('test')">
 
 <section class="bg-gray-50">
     <!-- Main Container -->
@@ -381,4 +381,4 @@
     </script>
 </section>
 
-</x-layouts.app>
+</x-layouts.template>
