@@ -15,7 +15,7 @@ Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
 
-Route::view('test', 'livewire/frontend/test')->name('test');
+Route::view('test', 'livewire/frontend/test')->name('test')->middleware('auth');
 
 Route::middleware(['auth'])->group(function () {
     Route::redirect('settings', 'settings/profile');
