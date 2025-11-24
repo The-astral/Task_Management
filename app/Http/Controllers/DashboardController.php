@@ -13,7 +13,9 @@ class DashboardController extends Controller
 
     public function index()
     {
+        
         $user=User::find(auth()->id());
+        // $user=Auth()->user();
         
         return view('livewire/frontend/dashboardtodo',compact('user'));
     }
