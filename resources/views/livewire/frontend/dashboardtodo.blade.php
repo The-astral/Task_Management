@@ -85,13 +85,13 @@
                         <button class="text-gray-600 hover:text-gray-800 transition-colors">
                             <i class="fas fa-bell text-xl"></i>
                         </button>
-                        <div class="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white font-semibold">
-                            JD
+                        <div class="w-10 h-10  flex items-center justify-center text-black capitalize font-semibold">
+                            {{auth()->user()->name}}
                         </div>
                     </div>
                 </div>
             </header>
-            
+
             <!-- Main Task Area -->
             <main class="flex-1 overflow-y-auto p-6">
                 
